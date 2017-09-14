@@ -1,0 +1,48 @@
+.large-hero {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 48px;
+    max-height: 100%;
+    max-width: 100%;
+    box-shadow: 0 1px 8px 0 rgba(0,0,0,.2),0 3px 4px 0 rgba(0,0,0,.14),0 3px 3px -2px rgba(0,0,0,.12);
+
+    @include desktop {
+        padding-top: 0;
+    }
+ 
+    &__text {
+            padding-top: 50px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+            width: 100%;
+            text-align: center;
+        
+            @include tablet {
+              padding-top: 60px;
+            }
+            @include desktop {
+              padding-top: 88px;
+            }
+    }
+
+    &__header {
+        font-weight: 500;
+        font-size: 2em;
+        color: white;
+        
+        @include tablet {
+            font-size: 3em;
+        }
+        @include desktop {
+            font-size: 3.5em;
+        }
+        @include large-desktop {
+            font-size: 4em;
+        }
+    }
+    }
+

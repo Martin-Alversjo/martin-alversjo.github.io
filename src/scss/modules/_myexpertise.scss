@@ -1,0 +1,130 @@
+.my-expertise {
+    background-color: #252627;
+    box-shadow: 0 1px 8px 0 rgba(0,0,0,.2),0 3px 4px 0 rgba(0,0,0,.14),0 3px 3px -2px rgba(0,0,0,.12);
+    
+    &__container {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            
+            @include tablet {
+                flex-direction: row;
+                justify-content: space-around;
+                padding-bottom: 50px;
+            }
+            @include desktop {
+                flex-direction: row;
+                justify-content: space-around;
+                padding-bottom: 100px;
+                width: 80%;
+            }
+            @include large-desktop {
+                flex-direction: row;
+                justify-content: space-around;
+                padding-bottom: 150px;
+                width: 80%;
+            }
+    }
+
+    &__header {
+        color: $lightBlue;
+        text-align: center;
+        padding-top: 40px;
+        padding-bottom: 40px;
+
+        @include desktop {
+            padding-top: 100px;
+            padding-bottom: 80px;
+            font-size: 2em;
+        }
+        @include large-desktop {
+            padding-top: 150px;
+            padding-bottom: 80px;
+            font-size: 2.5em;
+        }
+    }
+
+    &__box {
+        width: 230px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        border-radius: 4px;
+        height: 400px;
+        box-shadow: 0 1px 8px 0 rgba(0,0,0,.2),0 3px 4px 0 rgba(0,0,0,.14),0 3px 3px -2px rgba(0,0,0,.12);
+        background-color: $lightGrey;
+        display: flex;
+        flex-direction: column;
+
+        @include desktop {
+            width: 280px;
+            height: 350px;
+        }
+        @include large-desktop {
+            width: 280px;
+            height: 350px;
+        }
+
+        &--container {
+            height: 100px;
+            width: 100px;
+            background-color: $lightGrey;
+            border-radius: 100%;
+            box-shadow: 1px 2px 4px 2px rgba(0, 0, 0, 0.3);
+            margin-top: -50px;
+            margin-left: auto;
+            margin-right: auto;
+            align-self: center;
+            text-align: center;
+            
+
+            &--css {
+                background-color: $lightBlue;
+            }
+
+            &--js {
+                font-size: 1em;
+                background-color: #F8E71C;
+            }
+        }
+
+        &--icon {
+            padding-top: 18px;
+            padding-bottom: 18px;
+
+            &--html {
+                color: #F5A623;
+            }
+
+            &--css {
+                color: snow;
+            }
+            &--js {
+                font-size: 2.5em;
+                font-weight: 600;
+                text-shadow: 1px 1px #f0f0f0;
+            }
+        }
+        &__content {
+            margin-top: 10px;
+            font-size: 1em;
+            width: 90%;
+            align-self: center;
+            text-align: left;
+
+            &--header {
+                color: $darkTextGrey;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                text-align: center;
+            }
+            &--text {
+                color: $darkTextGrey;              
+                
+            }
+        }
+    } 
+}

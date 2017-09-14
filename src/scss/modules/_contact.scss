@@ -1,0 +1,41 @@
+.contact {
+    background-color: #F0F0F0;
+    box-shadow: 0 1px 8px 0 rgba(0,0,0,.2),0 3px 4px 0 rgba(0,0,0,.14),0 3px 3px -2px rgba(0,0,0,.12);
+
+    &__content {
+        text-align: center;
+        color: $lightTextGrey;
+        padding-top: 100px;
+        padding-bottom: 100px;
+
+        @include tablet {
+            font-size: 1.1em;
+        }
+
+        @include desktop {
+            font-size: 1.2em;
+            padding-top: 120px;
+            padding-bottom: 120px;
+        }
+        @include large-desktop {
+            font-size: 1.3em;
+            padding-top: 130px;
+            padding-bottom: 130px;
+        }
+
+        &--mail {
+            padding-top: 20px;
+            color: $darkBlue;
+            @include tablet {
+                font-size: 1em;
+            }
+    
+            @include desktop {
+    
+            }
+            @include large-desktop {
+    
+            }
+        }
+    }
+}

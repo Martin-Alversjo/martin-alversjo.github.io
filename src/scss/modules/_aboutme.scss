@@ -1,0 +1,40 @@
+.about-me {
+    color: $darkTextGrey;
+    
+    &__header {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        text-align: center;
+
+        @include tablet {
+            padding-top: 80px;
+            padding-bottom: 80px;
+            font-size: 1.8em;
+        }
+        @include desktop {
+            padding-top: 150px;
+            padding-bottom: 80px;
+            font-size: 2em;
+        }
+        @include large-desktop {
+            padding-top: 150px;
+            padding-bottom: 80px;
+            font-size: 2.5em;
+        }
+    }
+
+    &__text {
+        padding-bottom: 100px;
+        @include tablet {
+            padding-bottom: 150px;
+        }
+        @include desktop {
+            
+            padding-bottom: 200px;
+        }
+        @include large-desktop {
+            padding-bottom: 250px;
+            
+        }
+    }
+}

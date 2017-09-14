@@ -1,0 +1,27 @@
+.footer {
+    background-color: $darkGrey;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    &__logo {
+        padding: 20px;
+    }
+
+    &__links {
+        
+        padding: 10px;
+        &--linkin {
+            color: $lightTextGrey;
+        }
+        &--linkin:hover {
+            color: $lightBlue;
+        }
+        &--container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 20px;
+        }
+    }
+}

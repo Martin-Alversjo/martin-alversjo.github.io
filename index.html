@@ -1,0 +1,227 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="src/css/main.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link rel="stylesheet" href="src/css/font-awesome/css/font-awesome.min.css">   
+        <script src="dist/scrollreveal/scrollreveal.min.js"></script> 
+
+    </head>
+    
+    <body> 
+
+        <!-- ===== SITE HEADER ===== -->
+        <header class="site-header">
+            <!-- === site header logo === -->
+            <div class="site-header__logo">
+                <img src="./src/images/Icon.png" alt="Site Logo" height="31" width="33"/>
+            </div>
+
+            <!-- === site header nav menu === -->
+            <div class="site-header__menu-content">
+                <nav class="site-header__nav">
+                    <ul>
+                    <li><a href="#about-me" id="about-me-link">About Me</a></li>
+                    <li><a href="#my-expertise" id="my-expertise-link">My Expertise</a></li>
+                    <li><a href="#philosophy" id="philosophy-link">Philosophy</a></li>
+                    <li><a href="#contact" id="contact-link">Contact</a></li>
+                  </ul> 
+            </nav>
+            </div>
+            <!-- === site header hamburger menu === -->
+            <div class="site-header__menu-icon">
+                <div class="site-header__menu-icon__middle"></div>
+            </div>
+
+        </header>
+
+        <main class="container__desktop">
+
+            <!-- ===== LARGE HERO IMAGE ===== -->
+            <div class="large-hero">
+            <picture>
+                <source srcset="src/images/large-hero--large.png 1920w" alt="Picture of space" media="(min-width: 1380px)">
+                <source srcset="src/images/large-hero--medium.jpg 1380w" alt="Picture of space" media="(min-width: 640px)">
+                <img srcset="src/images/large-hero-small.jpeg 640w" alt="Picture of space" >
+            </picture>
+            <div class="large-hero__text">
+                    <h1 class="large-hero__header"><span style="color: #0288D1">M</span>ARTIN//<br>
+                    <span style="color: #0288D1">A</span>LVERSJÖ
+                    </h1>
+                </div>
+            </div>
+
+            
+            <main class="container">  
+                <!-- ===== ABOUT ME ===== -->
+
+                <section class="about-me" id="about-me">
+                    <h2 class="about-me__header">About me</h2>
+                    <p class="about-me__text">Hi! This is Martin. I am a Frontend-developer and student currently stationed in Stockholm, Sweden. When my head is not deep into coding I spend my time training Martial Arts, visit the pub with my awesome friends and play funk grooves on the drums.
+                        
+                        Right now my goal is to master the art of programming, I visualise myself being a full-stack developer in the future and provide people with the awesome products they deserve.
+                    </p>
+                </section>
+            </main>
+                <!-- ===== MY EXPERTISE ===== -->
+
+                <section class="my-expertise" id="my-expertise">
+                    <h2 class="my-expertise__header">My Expertise</h2>
+                    <main class="my-expertise__container">
+
+                        <!-- === html box === -->
+                        <article class="my-expertise__box">
+                            <div class="my-expertise__box--container">
+                                <i class="fa fa-html5 fa-4x my-expertise__box--icon my-expertise__box--icon--html" aria-hidden="true"></i>                                
+                            </div>
+                            <div class="my-expertise__box__content">
+                                    <h4 class="my-expertise__box__content--header">HTML</h4>
+                                    <p class="my-expertise__box__content--text">"The benefit of writing semantic HTML stems from what should be the driving goal of any web page— the desire to communicate."</p>
+                                </div>
+                        </article>
+                        <!-- === css box === -->
+                        <article class="my-expertise__box">
+                                <div class="my-expertise__box--container my-expertise__box--container--css">
+                                    <i class="fa fa-css3 fa-4x my-expertise__box--icon my-expertise__box--icon--css" aria-hidden="true"></i>
+                                </div>
+                                <div class="my-expertise__box__content">
+                                        <h4 class="my-expertise__box__content--header">CSS</h4>
+                                        <p class="my-expertise__box__content--text">I love writing beautiful CSS, that was one of the main reasons I became a Frontend-developer. To get the instant feedback. Tools I like to use are either SASS or PostCSS depending on the project.</p>
+                                 </div>
+                            </article>
+                        <!-- === javascript box === -->
+                            <article class="my-expertise__box">
+                                    <div class="my-expertise__box--container my-expertise__box--container--js">
+                                        <p class="my-expertise__box--icon my-expertise__box--icon--js"><em>JS</em></p>                                      
+                                    </div>
+                                    <div class="my-expertise__box__content">
+                                            <h4 class="my-expertise__box__content--header">Javascript</h4>
+                                            <p class="my-expertise__box__content--text">I like to code modular Javascript for good organisation in code. The tools and frameworks I like to use when creating a Javascript environment are:<br>1. Gulp and Webpack<br>2. jQuery and Babel<br>3. React</p>
+                                        </div>
+                                </article>
+
+                    </main>
+                </section>
+                
+
+                <main class="container">
+                <!-- ===== QUOTE ===== -->
+                <section class="quote">
+                    <section class="quote__box">
+                        <h2 class="quote__header">Where I come in</h2>
+                        <div class="quote__line"></div>
+                        <p class="quote__text">”Computers are like humans<br> - they do everything except<br> think.”</p>
+                        <p class="quote__author">John von Neumann</p>
+                    </section>
+                </section>
+                </main>
+
+                <!-- ==== Philisophies ===== -->
+                <section class="philosophies__background" id="philosophy">
+                <h2 class="philosophies__header">Philosophy</h2>
+                    <main class="container">
+                        <section class="philosophies">
+                        <div class="philosophies__modules">
+                            <!-- === Planning === -->
+                        <div class="philosophies__box">
+                            <div class="philosophies__icon philosophies__icon--planning">
+                                <i class="fa fa-space-shuttle fa-rotate-270 fa-2x" aria-hidden="true"></i>
+                            </div>
+                            <!-- === planning content === -->
+                            <div class="philosophies__content">
+                                <h3 class="philosophies__content--header">Planning</h3>
+                                <p class="philosophies__content--text">Before every launch the mission requires to have a good plan.</p>
+                            </div>
+                        </div>
+                        
+
+                    <!-- === Responsive === -->
+                        
+                        <div class="philosophies__box">
+                                <div class="philosophies__icon philosophies__icon--responsive">
+                                    <i class="fa fa-mobile fa-3x" aria-hidden="true"></i>
+                             </div>
+                                <!-- === planning content === -->
+                               <div class="philosophies__content">
+                                    <h3 class="philosophies__content--header">Responsive</h3>
+                                    <p class="philosophies__content--text">A big chunk of all humanoids use phones and tablets. I do Mobile First.</p>
+                                </div>
+                            </div>
+
+                    <!-- === Design === -->
+                    
+                        <div class="philosophies__box">
+                                <div class="philosophies__icon philosophies__icon--design">
+                                    <i class="fa fa-eye fa-2x" aria-hidden="true"></i>
+                                </div>
+                                <!-- === design content === -->
+                                <div class="philosophies__content">
+                                    <h3 class="philosophies__content--header">Design</h3>
+                                    <p class="philosophies__content--text">The eye wants candy too,<br> thats what a good design provides.</p>
+                                </div>
+                            </div>
+                            </div>
+
+                            <div class="philosophies__image">
+                                <picture>
+                                    <source srcet="src/images/my-expertise--small.jpg" media="(max-width: 1380px)">
+                                    <img srcset="src/images/my-expertise--medium.jpg" alt="Dark picture of space" >
+                                </picture>
+                            </div>
+                    </main>
+                </section>
+            </section>
+                <!--- ===== Contact ===== -->
+
+                <section class="contact" id="contact">
+                    <main class="container">
+                        <div class="contact__content">
+                            <p>Right now I am looking for internship as a Frontend developer.<br>
+                                    If interested just contact me on the mail below.</p>
+                            <p class="contact__content--mail">martin.alversjo@icloud.com</p>
+                        </div>
+                        
+                </section>
+                
+                <!-- ===== Footer ===== -->
+
+                <footer class="footer">
+                
+                    <div class="footer__logo">
+                        <img src="./src/images/Icon.png" alt="Site Logo" height="66" width="68"/>
+                    </div>
+                    <!-- === links === -->
+                    <div class="footer__links--container">
+                        <div class="footer__links">
+                            <a href="https://linkedin.com/in/martin-alversjö-65a01a147" class="footer__links--linkin"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+                        </div>
+
+                        <div class="footer__links">
+                            <a href="https://github.com/Martin-Alversjo" class="footer__links--linkin"><i class="fa fa-github-square fa-2x" aria-hidden="true"></i></a>
+                        </div>
+
+                        <div class="footer__links">
+                            <a href="https://www.facebook.com/martin.alversjo" class="footer__links--linkin"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
+                        </div>
+                   </div>
+                   <!-- ===== /container__desktop ===== -->
+                </main>   
+                </footer>
+                <script src="dist/app.js"></script>
+
+                <!-- ===== Scroll Reveal ===== -->
+                <script>        
+                    window.sr = ScrollReveal();
+                    sr.reveal(".my-expertise__container", {
+                        duration: 2000,
+                        origin: 'bottom'
+                    });
+                    sr.reveal(".philosophies", {
+                        duration: 2000,
+                        origin: 'bottom'
+                    })
+                </script>
+    </body>
+</html>
